@@ -1,0 +1,21 @@
+### Get best 10 stories
+GET https://localhost:5001/api/stories/best/10
+
+### Get best 5 stories
+GET https://localhost:5001/api/stories/best/5
+
+### Get best 1 story
+GET https://localhost:5001/api/stories/best/1
+
+### Invalid - count is 0 (should return 400)
+GET https://localhost:5001/api/stories/best/0
+
+### Invalid - count is negative (should return 400)
+GET https://localhost:5001/api/stories/best/-1
+
+### Invalid - count exceeds limit (should return 400)
+GET https://localhost:5001/api/stories/best/501
+
+### Get best 20 stories
+GET https://localhost:5001/api/stories/best/20
+
